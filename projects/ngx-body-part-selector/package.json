@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A tappable human body silhouette for selecting body parts, for Angular.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JohannSchramm/ngx-body-part-selector.git"
+  },
   "peerDependencies": {
     "@angular/common": "^22.1.0",
     "@angular/core": "^22.1.0"
