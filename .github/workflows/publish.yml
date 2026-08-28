@@ -40,6 +40,6 @@ jobs:
         run: npx ng build ngx-body-part-selector
 
       - name: Publish to npm
-        run: npm publish ./dist/ngx-body-part-selector --provenance
+        run: npm publish ./dist/ngx-body-part-selector --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
