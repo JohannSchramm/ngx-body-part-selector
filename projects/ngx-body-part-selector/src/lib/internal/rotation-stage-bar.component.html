@@ -1,0 +1,11 @@
+<div class="handles">
+  @for (handle of handles(); track handle.side) {
+    <ngx-rotation-stage-handle
+      [label]="handle.label"
+      [active]="handle.active"
+      [backgroundTransparent]="backgroundTransparent()"
+      [style.opacity]="handle.opacity"
+      (handleTap)="onHandleTap(handle.side)"
+    />
+  }
+</div>

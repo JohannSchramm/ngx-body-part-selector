@@ -1,0 +1,42 @@
+<main>
+  <h1>ngx-body-part-selector demo</h1>
+
+  <section>
+    <h2>BodyPartSelectorTurnableComponent</h2>
+    <p>Drag or tap the bottom bar to rotate.</p>
+    <div class="turnable-host">
+      <ngx-body-part-selector-turnable [(bodyParts)]="turnableBodyParts" />
+    </div>
+    <pre>{{ turnableBodyParts() | json }}</pre>
+  </section>
+
+  <section>
+    <h2>BodyPartSelectorComponent (standalone, single side)</h2>
+
+    <div class="controls">
+      <label>
+        Side:
+        <select [value]="side()" (change)="side.set($any($event.target).value)">
+          @for (s of sides; track s) {
+            <option [value]="s">{{ s }}</option>
+          }
+        </select>
+      </label>
+
+      <label>
+        <input type="checkbox" [checked]="mirrored()" (change)="mirrored.set(!mirrored())" />
+        Mirrored
+      </label>
+    </div>
+
+    <div class="selector">
+      <ngx-body-part-selector
+        [(bodyParts)]="staticBodyParts"
+        [side]="side()"
+        [mirrored]="mirrored()"
+      />
+    </div>
+
+    <pre>{{ staticBodyParts() | json }}</pre>
+  </section>
+</main>

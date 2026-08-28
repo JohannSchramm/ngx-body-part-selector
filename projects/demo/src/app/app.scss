@@ -1,0 +1,34 @@
+main {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 16px;
+  font-family: sans-serif;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+.controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.turnable-host {
+  width: 100%;
+  height: 70vh;
+  border: 1px solid #ccc;
+}
+
+.selector {
+  width: 100%;
+  height: 60vh;
+  border: 1px solid #ccc;
+}
+
+pre {
+  font-size: 11px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}

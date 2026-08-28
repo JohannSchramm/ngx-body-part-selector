@@ -1,0 +1,24 @@
+<div class="stage">
+  @for (panel of panels(); track panel.index) {
+    <div
+      class="panel"
+      [style.opacity]="panel.opacity"
+      [style.transform]="panel.transform"
+      [style.pointer-events]="panel.interactive ? 'auto' : 'none'"
+    >
+      <div class="outer-padding" [style.padding]="padding()">
+        <div class="inner-padding">
+          <ngx-body-part-selector
+            [(bodyParts)]="bodyParts"
+            [side]="panel.bodySide"
+            [mirrored]="mirrored()"
+            [selectedColor]="selectedColor()"
+            [unselectedColor]="unselectedColor()"
+            [selectedOutlineColor]="selectedOutlineColor()"
+            [unselectedOutlineColor]="unselectedOutlineColor()"
+          />
+        </div>
+      </div>
+    </div>
+  }
+</div>

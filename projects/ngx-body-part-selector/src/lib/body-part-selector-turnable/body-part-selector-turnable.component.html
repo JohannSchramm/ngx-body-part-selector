@@ -1,0 +1,24 @@
+<div class="turntable">
+  <div class="content">
+    <ngx-rotation-stage-content
+      [controller]="controller"
+      [(bodyParts)]="bodyParts"
+      [mirrored]="mirrored()"
+      [selectedColor]="selectedColor()"
+      [unselectedColor]="unselectedColor()"
+      [selectedOutlineColor]="selectedOutlineColor()"
+      [unselectedOutlineColor]="unselectedOutlineColor()"
+      [padding]="padding()"
+    />
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="bar" [style.height]="barHeight()">
+    <ngx-rotation-stage-bar
+      [controller]="controller"
+      [labelData]="labelData()"
+      [barInteractable]="barInteractable()"
+    />
+  </div>
+</div>

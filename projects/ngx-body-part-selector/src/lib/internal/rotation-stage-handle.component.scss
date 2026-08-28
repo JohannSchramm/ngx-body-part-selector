@@ -1,0 +1,29 @@
+:host {
+  display: inline-flex;
+}
+
+.handle {
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+  color: var(--npbs-handle-inactive-foreground-color, #1d1b20);
+  background: var(--npbs-handle-inactive-background-color, transparent);
+  transition:
+    color 150ms ease,
+    background-color 150ms ease;
+  white-space: nowrap;
+
+  &.active {
+    color: var(--npbs-handle-active-foreground-color, #ffffff);
+    background: var(--npbs-handle-active-background-color, #6750a4);
+  }
+
+  &.transparent {
+    background: transparent !important;
+    box-shadow: none;
+  }
+}

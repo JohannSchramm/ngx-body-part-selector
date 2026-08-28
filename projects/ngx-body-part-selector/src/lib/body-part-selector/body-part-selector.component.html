@@ -1,0 +1,15 @@
+<svg
+  [attr.viewBox]="svgData().viewBox"
+  preserveAspectRatio="xMidYMid meet"
+  role="img"
+  [attr.aria-label]="side()"
+>
+  @for (path of svgData().paths; track path.id) {
+    <path
+      [attr.id]="path.id"
+      [attr.d]="path.d"
+      [class.selected]="isSelected(path.id)"
+      (click)="toggle(path.id)"
+    />
+  }
+</svg>
