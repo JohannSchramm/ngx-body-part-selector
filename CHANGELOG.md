@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.0.0
 
 - Initial Angular port of the Flutter `body_part_selector` package as
   `ngx-body-part-selector`. Exports `BodyPartSelectorComponent`,

@@ -1,6 +1,6 @@
 {
   "name": "ngx-body-part-selector",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A tappable human body silhouette for selecting body parts, for Angular.",
   "license": "MIT",
   "peerDependencies": {
